@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meat charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="secondtextView" maxlength="15" readonly>
+                        <input type="text" id="textView" maxlength="15" readonly></td>
+                </tr>
+                <tr>
+                    <td><button class="button delete" onclick="deleteNumber()">&#8656</button></td>
+                    <td><button class="button delete" onclick="deleteAll()">C</button></td>
+                    <td><button class="button delete" onclick="equal('radic')">&radic;</button></td>
+                    <td><button class="button operations" onclick="writeNumber('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="writeNumber(7)">7</button></td>
+                    <td><button class="button" onclick="writeNumber(8)">8</button></td>
+                    <td><button class="button" onclick="writeNumber(9)">9</button></td>
+                    <td><button class="button operations" onclick="writeNumber('*')">×</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="writeNumber(4)">4</button></td>
+                    <td><button class="button" onclick="writeNumber(5)">5</button></td>
+                    <td><button class="button" onclick="writeNumber(6)">6</button></td>
+                    <td><button class="button operations" onclick="writeNumber('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="writeNumber(1)">1</button></td>
+                    <td><button class="button" onclick="writeNumber(2)">2</button></td>
+                    <td><button class="button" onclick="writeNumber(3)">3</button></td>
+                    <td><button class="button operations" onclick="writeNumber('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button dot" onclick="writeNumber(0)">0</button></td>
+                    <td><button class="button" onclick="writeNumber('.')">.</button></td>
+                    <td><button class="button operations" onclick="equal()">=</button></td>
+                </tr>
+            </table>
+        </div>
+        <script src="calculator.js"></script>
+
+    </body>
+</html>
